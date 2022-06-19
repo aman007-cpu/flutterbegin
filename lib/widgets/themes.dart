@@ -7,9 +7,9 @@ class MyTheme {
   static ThemeData lightTheme(BuildContext context) => ThemeData(
       primarySwatch: Colors.deepOrange,
       fontFamily: GoogleFonts.poppins().fontFamily,
-      cardColor: Colors.black,
+      cardColor: Colors.white,
       canvasColor: darkcreamcolor,
-      buttonColor: lightbluish,
+      primaryColorDark: darkbluish,
       appBarTheme: AppBarTheme(
           color: Colors.white,
           elevation: 0.0,
@@ -20,22 +20,24 @@ class MyTheme {
           )),
       primaryTextTheme: GoogleFonts.latoTextTheme());
   static ThemeData darkTheme(BuildContext context) => ThemeData(
+        brightness: Brightness.dark,
         fontFamily: GoogleFonts.poppins().fontFamily,
         cardColor: Colors.black,
         canvasColor: darkcreamcolor,
+        primaryColorDark: darkbluish,
         buttonColor: lightbluish,
         appBarTheme: AppBarTheme(
             color: Colors.black,
             elevation: 0.0,
-            iconTheme: IconThemeData(color: Colors.black),
+            iconTheme: IconThemeData(color: Colors.white),
             titleTextStyle: TextStyle(
-              color: Colors.black,
+              color: Colors.white,
               fontSize: 20,
             )),
       );
   //Colors
   static Color creamcolor = Color(0xfff5f5f5);
-  static Color darkcreamcolor = Vx.gray800;
+  static Color darkcreamcolor = Color.fromARGB(255, 11, 11, 31);
   static Color darkbluish = Color(0xff403b58);
   static Color lightbluish = Vx.purple400;
 }

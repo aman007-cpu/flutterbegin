@@ -16,10 +16,10 @@ class HomeDetailpage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: context.canvasColor,
       ),
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: context.cardColor,
         child: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
           buttonPadding: EdgeInsets.zero,
@@ -38,7 +38,7 @@ class HomeDetailpage extends StatelessWidget {
           ],
         ).p32(),
       ),
-      backgroundColor: MyTheme.creamcolor,
+      backgroundColor: context.canvasColor,
       body: SafeArea(
         bottom: false,
         child: Column(children: [
@@ -54,11 +54,11 @@ class HomeDetailpage extends StatelessWidget {
             edge: VxEdge.TOP,
             arcType: VxArcType.CONVEY,
             child: Container(
-              color: Colors.white,
+              color: context.cardColor,
               width: context.screenWidth,
               child: Column(
                 children: [
-                  catalog.name.text.color(MyTheme.darkbluish).xl4.bold.make(),
+                  catalog.name.text.color(MyTheme.creamcolor).xl4.bold.make(),
                   catalog.desc.text.xl.textStyle(context.captionStyle).make(),
                   10.heightBox,
                   "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."

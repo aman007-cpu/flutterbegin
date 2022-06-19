@@ -1,4 +1,7 @@
 class CatalogModel {
+  static final catModel = CatalogModel();
+  factory CatalogModel() => catModel;
+
   static List<Item> items = [
     Item(
         id: 1,
@@ -9,6 +12,12 @@ class CatalogModel {
         image:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2QcKLfKsTkrkRGdUKv2kaGUm_VvNv7oJQhQ&usqp=CAU")
   ];
+  //get item by id
+  Item getById(int id) =>
+      items.firstWhere((element) => element.id == id, orElse: null);
+
+  //get item by position
+  Item getByposition(int pos) => items[pos];
 }
 
 class Item {

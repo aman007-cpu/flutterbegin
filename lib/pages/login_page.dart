@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter_application_1/utils/routes.dart';
 import 'package:matcher/matcher.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -29,14 +30,14 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-        color: Colors.white,
+        color: context.canvasColor,
         child: SingleChildScrollView(
             child: Form(
           key: _formkey,
           child: Column(
             children: [
               Image.asset(
-                "assets/images/log.png",
+                "assets/images/log.jpg",
                 height: 200,
                 fit: BoxFit.cover,
               ),
@@ -84,7 +85,7 @@ class _LoginPageState extends State<LoginPage> {
                     SizedBox(height: 40),
 
                     Material(
-                      color: Colors.purple,
+                      color: Color.fromARGB(255, 65, 165, 236),
                       borderRadius: BorderRadius.circular(chngbtn ? 50 : 8),
                       child: InkWell(
                         onTap: () => moveToHome(context),

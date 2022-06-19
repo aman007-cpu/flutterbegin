@@ -18,9 +18,6 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
-  final int days = 30;
-
-  final String name = "aman kaintura";
   @override
   void initState() {
     // TODO: implement initState
@@ -47,7 +44,7 @@ class _HomepageState extends State<Homepage> {
         backgroundColor: context.canvasColor,
         floatingActionButton: FloatingActionButton(
           onPressed: () => Navigator.pushNamed(context, MyRoutes.cartroute),
-          backgroundColor: Colors.red,
+          backgroundColor: context.theme.primaryColorLight,
           child: Icon(CupertinoIcons.cart),
         ),
         body: SafeArea(
