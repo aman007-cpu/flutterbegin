@@ -1,0 +1,63 @@
+{
+    "products": [
+        {
+            "id" : 1,
+            "name": "iphone 12 pro",
+            "desc": "Apple iphone 12th generator",
+            "price": 992,
+            "color": "#33505a",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2QcKLfKsTkrkRGdUKv2kaGUm_VvNv7oJQhQ&usqp=CAU"
+
+
+        },
+        {
+            "id" : 2,
+            "name": "iphone 11 pro",
+            "desc": "Apple iphone 11th generator",
+            "price": 952,
+            "color": "#00ac51",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2QcKLfKsTkrkRGdUKv2kaGUm_VvNv7oJQhQ&usqp=CAU"
+        },
+        {
+            "id" : 3,
+            "name": "Google pixel 5",
+            "desc": "5th generator",
+            "price": 852,
+            "color": "#e3e4e9",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh5XScjPVG_NgufJsfSO1GPKkYO4SRnRGsuA&usqp=CAU"
+        },
+        {
+            "id" : 4,
+            "name": "samsung s20 ultra",
+            "desc": "5th generator",
+            "price": 952,
+            "color": "#7c95eb",
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoWbuxbhUNlLWIBA8ZbZrEhehUY3HL0VmPS72qRGUf87bhCPW7GqemHIWFUDQUMQC7Hho&usqp=CAU"
+        },
+        {
+            "id" : 5,
+            "name": "One plus 9 pro",
+            "desc": "9th generator",
+            "price": 702,
+            "color": "#7c95eb",
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLtUkCM9RxFNfMg18mqQoL3lbK7KF7CwXLb3_rqCuxmxW44CqfnIvFKZtl2tkcrUbPzog&usqp=CAU"  
+          },
+          {
+            "id" : 6,
+            "name": "Samsung Z fold 2",
+            "desc": "10th generator",
+            "price": 1000,
+            "color": "#7c95eb",
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKwmcsgUw-5mNZn8fJ4cQ3Dkt0qXMjoumsgw&usqp=CAU"
+           },
+           {
+            "id" : 7,
+            "name": "motorola razr fold",
+            "desc": " New generation",
+            "price": 930,
+            "color": "#7c95eb",
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLHlmzt68mv5vbuft6JCQgFY7ZrVpK3RXpdg&usqp=CAU"
+          }
+
+    ]
+}
